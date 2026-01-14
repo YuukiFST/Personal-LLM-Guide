@@ -77,10 +77,10 @@ It is best used for **analysis and verification** purposes.
 
 ### Claude Sonnet 4.5
 
-The second best option for coding.  
-It is very strong at writing code but weaker at UI/GUI generation compared to Gemini models.
+One of the best options for coding among the models mentioned.  
+It is capable of producing high-quality code when given precise and well-structured prompts.
 
-Although expensive, it is worth the cost. Be very specific in your prompts to obtain high-quality responses.
+Be very specific in your prompts to obtain the best results.
 
 ---
 
@@ -108,3 +108,17 @@ Python is widely used for:
 This is why LLMs rely heavily on Python for benchmarks, especially math-related tasks. Additionally, LLMs use Python to generate PDFs, DOCX files, and other formats.
 
 Python is the programming language that LLMs are most proficient in. As a result, even the free version of ChatGPT can effectively help you create Python scripts.
+
+---
+
+## Rule 7 – IDEs, Tooling, and User Knowledge Matter
+
+LLM performance can vary significantly depending on the IDE or tool being used. Some companies deliberately limit model capabilities to reduce costs, while others fail to use high-quality system prompts for their LLM integrations.
+
+This is why, in some IDEs, such as Antigravity, **Claude Opus 4.5 may appear weaker** compared to its performance in tools like Cursor. The difference is not necessarily the model itself, but how it is configured, constrained, and prompted.
+
+If you do not understand what computing and mathematics are capable of—or how to apply them—you will not know how to ask the LLM the right questions. As a result, you will consistently generate simple, limited applications with poor optimization and multiple security gaps.
+
+You do not know what you do not know. Only those who truly understand a subject know how to ask the right questions.
+
+This is similar to gastronomy: if you only know how to cook an egg, you will always cook eggs—no matter how good the kitchen tools are.
