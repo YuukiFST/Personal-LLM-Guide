@@ -121,7 +121,7 @@ Python is widely used for:
 
 **I believe** this is why LLMs rely heavily on Python for benchmarks, especially math-related tasks. Additionally, I've noticed LLMs use Python to generate PDFs, DOCX files, and other formats.
 
-**In my experience**, Python is the programming language that LLMs are most proficient in. As a result, even the free version of ChatGPT can effectively help you create Python scripts.
+Python is the programming language that LLMs are most proficient in. As a result, even the free version of ChatGPT can effectively help you create Python scripts.
 
 ---
 
