@@ -10,13 +10,14 @@ This guide contains observations that I have not found in other official documen
 
 ## Rule 1 – UI Design and LLM Behavior
 
-**In my experience**, the best LLMs for UI design are **Gemini 3 Pro** and **Gemini 3 Flash**.  
+**In my experience**, the best LLMs for UI design are **Gemini 3 Pro** and **Gemini 3 Flash**.\
 However, I've noticed they tend to generate very similar UIs about 90% of the time. In my observation, anyone familiar with LLM outputs will recognize that the design follows a specific **"vibe coding"** style.
 
 ### What I recommend doing
 
-- Use a different font  
-- Do not add emojis
+* Use a different font
+
+* Do not add emojis
 
 ---
 
@@ -54,7 +55,7 @@ If you decide to generate code for a complex program, I recommend including **ex
 
 **As of my last testing** (January 2026), these are the LLMs I have tested the most and therefore have the most experience with:
 
-- **Claude Opus 4.5**
+* **Claude Opus 4.5**
 
 ### Claude Opus 4.5
 
@@ -70,27 +71,29 @@ While I only recommend **Claude Opus 4.5** for coding, other models can be usefu
 
 ### Gemini 3 Flash
 
-**In my opinion**, not suitable for coding tasks.  
+**In my opinion**, not suitable for coding tasks.\
 However, it is the **fastest and cheapest** option available.
 
 **Important strength**: Gemini 3 Flash is a good model for extracting information or content from text. It is smart enough to handle this task effectively and does so extremely quickly.
 
 I've found you can build a good-looking UI with it, but I don't recommend using it for debugging if UI errors occur. Based on my experience, Gemini 3 Flash is best suited for quickly checking or verifying information due to its speed.
 
-**Important Note on Hallucination**: Gemini 3 Flash has a very high hallucination rate. Because of this, it is interesting to follow some of the prompt engineering practices that Anthropic uses for Claude. Specifically, I recommend that more than 80% of your prompt should consist of rules about what the model should NOT do. This approach helps redirect the model toward the correct path and reduces hallucinations.
+**Important Note on Hallucination**: Gemini 3 Flash and Pro models require more careful prompting than models like Claude Opus 4.5. According to benchmark data, Gemini 3 Flash scores 91% on hallucination tests while Gemini 3 Pro scores 88%, indicating they need more attention when crafting prompts. An effective technique discovered from analyzing Anthropic's leaked Claude system prompt is to structure prompts so that more than 80% consists of rules about what the model should NOT do. This approach helps redirect the model toward the correct path and reduces hallucinations.
 
 I suggest avoiding it for complex content generation, except for UI/GUI tasks and text extraction.
+
+<img width="1572" height="617" alt="image" src="https://github.com/user-attachments/assets/837637e1-c253-4721-be03-e5749d3ece13" />
 
 ---
 
 ### Gemini 3 Pro
 
-**From my testing**, not recommended for coding.  
+**From my testing**, not recommended for coding.\
 It is effective for building UI, similar to Gemini 3 Flash.
 
 The Pro version, in my experience, is smarter and significantly more expensive, which makes it suitable for debugging UI/GUI issues. I don't recommend using it to generate complex logic-heavy content.
 
-**Important Note on Hallucination**: Just like the Flash version, Gemini 3 Pro also has a very high hallucination rate. The attention required when sending prompts to this model should be significantly higher than when using a more reliable model like Claude Opus 4.5. I recommend following Anthropic's prompt engineering approach: structure your prompts so that more than 80% consists of rules about what NOT to do, which helps guide the model away from hallucinations.
+**Important Note on Hallucination**: The attention required when sending prompts to Gemini 3 Pro should be significantly higher than when using a more reliable model like Claude Opus 4.5. As mentioned above, following the prompt engineering technique discovered from Anthropic's leaked system prompt (80% rules about what NOT to do) is particularly effective with this model.
 
 **Important Note**: Gemini 3 Pro is noticeably superior compared to the Flash version for tasks outside the UI area. While both models perform similarly for UI design, the Pro version demonstrates significantly better performance in analysis, verification, and text processing tasks.
 
@@ -108,10 +111,13 @@ Rule 4 has some exceptions, especially when working with **Python**, at least fr
 
 Python is widely used for:
 
-- Process automation  
-- Data analysis  
-- Machine learning  
-- Data science  
+* Process automation
+
+* Data analysis
+
+* Machine learning
+
+* Data science
 
 **I believe** this is why LLMs rely heavily on Python for benchmarks, especially math-related tasks. Additionally, I've noticed LLMs use Python to generate PDFs, DOCX files, and other formats.
 
@@ -121,9 +127,9 @@ Python is widely used for:
 
 ## Rule 7 – IDEs, Tooling, and User Knowledge Matter
 
-**I've observed that** LLM performance can vary significantly depending on the IDE or tool being used. Some companies, in my opinion, deliberately limit model capabilities to reduce costs, while others fail to use high-quality system prompts for their LLM integrations.
+LLM performance can vary significantly depending on the IDE or tool being used. Some companies deliberately limit model capabilities to reduce costs, while others fail to use high-quality system prompts for their LLM integrations.
 
-This is why, **based on my testing**, in some IDEs, such as Antigravity, **Claude Opus 4.5 may appear weaker** compared to its performance in tools like Cursor. I believe the difference is not necessarily the model itself, but how it is configured, constrained, and prompted.
+This is why in some IDEs, such as Antigravity (Google's AI-powered IDE), **Claude Opus 4.5 is demonstrably weaker** compared to its performance in tools like Cursor. The difference is not the model itself, but how it is configured, constrained, and prompted by the platform.
 
 **In my view**, if you do not understand what computing and mathematics are capable of, or how to apply them, you will not know how to ask the LLM the right questions. As a result, you will consistently generate simple, limited applications with poor optimization and multiple security gaps.
 
