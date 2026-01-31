@@ -1,4 +1,3 @@
-```
 # Prompt Engineering: Complete Best Practices Guide
 
 ## Introduction
