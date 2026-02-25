@@ -83,6 +83,7 @@ I've found you can build a good-looking UI with it, but I don't recommend using 
 I suggest avoiding it for complex content generation, except for UI/GUI tasks and text extraction.
 
 <img width="1572" height="617" alt="image" src="https://github.com/user-attachments/assets/837637e1-c253-4721-be03-e5749d3ece13" />
+<img width="2372" height="1024" alt="image" src="https://github.com/user-attachments/assets/bf982b43-12f8-41ac-ab3f-f3b028d566ed" />
 
 ---
 
