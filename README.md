@@ -123,9 +123,9 @@ After using it extensively, I realized it can be highly valuable for **discussin
 
 ---
 
-### Kimi k2.5
+### Kimi K2.5
 
-Released on **January 26, 2026**, Kimi k2.5 is a Chinese open-source model. At the time of its release (before GLM 5), it was the best open-source model available, especially for coding. However, as of February 2026, I don't see many reasons to use it. It's more effective to just use Sonnet 4.6 — and since it's free (within daily limits), you can simply rotate between Google accounts when you hit the limit.
+Released on **January 26, 2026**, Kimi K2.5 is a Chinese open-source model. At the time of its release (before GLM 5), it was the best open-source model available, especially for coding. However, as of February 2026, I don't see many reasons to use it. It's more effective to just use Sonnet 4.6 — and since it's free (within daily limits), you can simply rotate between Google accounts when you hit the limit.
 
 ---
 
