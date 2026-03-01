@@ -4,7 +4,7 @@
 
 This guide contains observations that I have not found in other official documentation. I refer to the numbered items below as **"rules"** to facilitate cross-references.
 
-**Last update of my experiences**: January 2026
+**Last update of my experiences**: February 2026
 
 ---
 
@@ -53,21 +53,34 @@ If you decide to generate code for a complex program, I recommend including **ex
 
 ## Rule 5 – Recommended LLM for Coding
 
-**As of my last testing** (January 2026), these are the LLMs I have tested the most and therefore have the most experience with:
+**As of my last testing** (February 2026), these are the LLMs I have tested the most and therefore have the most experience with:
 
-* **Claude Opus 4.5**
+* **Claude Opus 4.6**
+* **Codex 5.3**
 
-### Claude Opus 4.5
+### Claude Opus 4.6
 
-**Based on my experience**, Claude Opus 4.5 is by far the best option for coding as of **January 2026**. It is also the most expensive model, but the quality and reliability it provides make it worth the investment for serious development work.
+Released on **February 17, 2026**, the launch generated some controversy — many developers were expecting the release of Sonnet 5 instead. Shortly after launch, several developers noted that the new version felt less capable than its predecessor (Opus 4.5). However, over time that perception seems to have shifted, and currently Opus 4.6 is regarded as the best model for coding tasks.
 
-**In my opinion**, this is the only model I recommend for coding tasks. The gap between Opus 4.5 and other models is significant enough that I consider it the clear choice for any programming-related work.
+The closest competitor today is **Codex 5.3**, a new model from OpenAI, which is the only model that comes close to matching Opus 4.6 in coding quality.
+
+**In my opinion**, for serious development work, Opus 4.6 remains the clear choice.
 
 ---
 
 ## Rule 5.1 – Other LLMs and Their Use Cases
 
-While I only recommend **Claude Opus 4.5** for coding, other models can be useful for specific tasks:
+While I only recommend **Claude Opus 4.6** for coding, other models can be useful for specific tasks:
+
+### Claude Sonnet 4.6
+
+Released on **February 17, 2026**, I haven't tested it extensively, but from the few tests I've done, it's been impressively capable. It has become my go-to replacement for GPT 5.2 in certain scenarios.
+
+For example, when I had problems configuring files, IDEs, or text editors, I used to ask GPT 5.2 — but it often gave nonsensical answers and failed to help even after multiple attempts. A specific case: I was trying to make Zed automatically run `gopls` to format my `.go` files on save. GPT 5.2 couldn't solve it after many tries; Sonnet 4.6 resolved it quickly.
+
+### Gemini 3.1 Pro
+
+Released on **February 19, 2026**, the most noticeable change from Gemini 3 Pro to 3.1 Pro is **speed** — and not in a good way. The new version is significantly slower than any model I've used before, making it practically unusable in my workflow (tested within Antigravity).
 
 ### Gemini 3 Flash
 
@@ -78,7 +91,7 @@ However, it is the **fastest and cheapest** option available.
 
 I've found you can build a good-looking UI with it, but I don't recommend using it for debugging if UI errors occur. Based on my experience, Gemini 3 Flash is best suited for quickly checking or verifying information due to its speed.
 
-**Important Note on Hallucination**: Gemini 3 Flash and Pro models require more careful prompting than models like Claude Opus 4.5. According to benchmark data, Gemini 3 Flash scores 91% on hallucination tests while Gemini 3 Pro scores 88%, indicating they need more attention when crafting prompts. An effective technique discovered from analyzing Anthropic's leaked Claude system prompt is to structure prompts so that more than 80% consists of rules about what the model should NOT do. This approach helps redirect the model toward the correct path and reduces hallucinations.
+**Important Note on Hallucination**: Gemini 3 Flash and Pro models require more careful prompting than models like Claude Opus 4.6. According to benchmark data, Gemini 3 Flash scores 91% on hallucination tests while Gemini 3 Pro scores 88%, indicating they need more attention when crafting prompts. An effective technique discovered from analyzing Anthropic's leaked Claude system prompt is to structure prompts so that more than 80% consists of rules about what the model should NOT do. This approach helps redirect the model toward the correct path and reduces hallucinations.
 
 I suggest avoiding it for complex content generation, except for UI/GUI tasks and text extraction.
 
@@ -94,11 +107,25 @@ It is effective for building UI, similar to Gemini 3 Flash.
 
 The Pro version, in my experience, is smarter and significantly more expensive, which makes it suitable for debugging UI/GUI issues. I don't recommend using it to generate complex logic-heavy content.
 
-**Important Note on Hallucination**: The attention required when sending prompts to Gemini 3 Pro should be significantly higher than when using a more reliable model like Claude Opus 4.5. As mentioned above, following the prompt engineering technique discovered from Anthropic's leaked system prompt (80% rules about what NOT to do) is particularly effective with this model.
+**Important Note on Hallucination**: The attention required when sending prompts to Gemini 3 Pro should be significantly higher than when using a more reliable model like Claude Opus 4.6. As mentioned above, following the prompt engineering technique discovered from Anthropic's leaked system prompt (80% rules about what NOT to do) is particularly effective with this model.
 
 **Important Note**: Gemini 3 Pro is noticeably superior compared to the Flash version for tasks outside the UI area. While both models perform similarly for UI design, the Pro version demonstrates significantly better performance in analysis, verification, and text processing tasks.
 
 I've found it is best used for **analysis and verification** purposes.
+
+---
+
+### GLM 5
+
+Released on **February 11, 2026**, GLM 5 is a Chinese open-source model and represents a significant leap forward for open-source generative AI. While it falls behind the best coding models (currently Opus 4.6 and Codex 5.3), I found it very interesting for conversational use.
+
+After using it extensively, I realized it can be highly valuable for **discussing a project, exploring ideas, or any conversation that might take a while** — particularly because it's free. In those use cases, I found it a better option than using GPT 5.2, which I'd otherwise reach for in similar situations.
+
+---
+
+### Kimi k2.5
+
+Released on **January 26, 2026**, Kimi k2.5 is a Chinese open-source model. At the time of its release (before GLM 5), it was the best open-source model available, especially for coding. However, as of February 2026, I don't see many reasons to use it. It's more effective to just use Sonnet 4.6 — and since it's free (within daily limits), you can simply rotate between Google accounts when you hit the limit.
 
 ---
 
@@ -130,7 +157,7 @@ Python is the programming language that LLMs are most proficient in. As a result
 
 LLM performance can vary significantly depending on the IDE or tool being used. Some companies deliberately limit model capabilities to reduce costs, while others fail to use high-quality system prompts for their LLM integrations.
 
-This is why in some IDEs, such as Antigravity (Google's AI-powered IDE), **Claude Opus 4.5 is demonstrably weaker** compared to its performance in tools like Cursor. The difference is not the model itself, but how it is configured, constrained, and prompted by the platform.
+This is why in some IDEs, such as Antigravity (Google's AI-powered IDE), **Claude Opus 4.6 is demonstrably weaker** compared to its performance in tools like Cursor. The difference is not the model itself, but how it is configured, constrained, and prompted by the platform.
 
 **In my view**, if you do not understand what computing and mathematics are capable of, or how to apply them, you will not know how to ask the LLM the right questions. As a result, you will consistently generate simple, limited applications with poor optimization and multiple security gaps.
 
