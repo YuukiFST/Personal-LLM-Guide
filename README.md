@@ -21,6 +21,28 @@ However, I've noticed they tend to generate very similar UIs about 90% of the ti
 
 ---
 
+## Rule 1.1 – Getting Better Frontend Results
+
+LLMs converge on a "default" UI style during training — essentially the average of everything they've seen. They are fully capable of producing something different, but you have to explicitly ask for it. The same way ChatGPT responds in the same tone for every user until you tell it to be sassy or explain like you're five, frontend generation defaults to safe, predictable outputs until you push it in a specific direction.
+
+There's a second problem: most of us aren't great at describing designs precisely. Treat frontend generation like any other engineering task — you need a detailed spec.
+
+### Tips
+
+**1. Use screenshots of designs you like.**\
+You may not know the right words to describe what you want, but the agent will figure it out from an image. A picture really is worth a thousand words here. Good sources for UI inspiration: Behance, Dribbble, and Mobbin (Mobbin is paid but worth it).
+
+**2. Ask for proposals before committing.**\
+Request multiple design directions first. This "seeds" different paths and makes it much more likely the final result will stand out. Don't be afraid to go back and forth.
+
+**3. Ban common tendencies explicitly.**\
+Some defaults to block: no Inter or Roboto, no shadcn (controversial but worth considering), no gradients, no emojis.
+
+**4. Tell the agent to make bold decisions, not safe ones.**\
+The underlying models tend to learn conservative choices through RL and fine-tuning — choices that are reasonable but visually boring. Explicitly encourage extremes. Tell it to take risks.
+
+---
+
 ## Rule 2 – Code Quality and Best Practices
 
 **From what I've seen**, LLMs are not capable of writing clean code on their own. When creating your prompt, I suggest explicitly instructing the LLM to generate the project following **Clean Code best practices** and proper **design principles**.
@@ -123,9 +145,9 @@ After using it extensively, I realized it can be highly valuable for **discussin
 
 ---
 
-### Kimi K2.5
+### Kimi k2.5
 
-Released on **January 26, 2026**, Kimi K2.5 is a Chinese open-source model. At the time of its release (before GLM 5), it was the best open-source model available, especially for coding. However, as of February 2026, I don't see many reasons to use it. It's more effective to just use Sonnet 4.6 — and since it's free (within daily limits), you can simply rotate between Google accounts when you hit the limit.
+Released on **January 26, 2026**, Kimi k2.5 is a Chinese open-source model. At the time of its release (before GLM 5), it was the best open-source model available, especially for coding. However, as of February 2026, I don't see many reasons to use it. It's more effective to just use Sonnet 4.6 — and since it's free (within daily limits), you can simply rotate between Google accounts when you hit the limit.
 
 ---
 
