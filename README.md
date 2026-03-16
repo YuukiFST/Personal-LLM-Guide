@@ -126,18 +126,27 @@ If you decide to generate code for a complex program, I strongly recommend inclu
 
 ## Rule 5 – Recommended LLM for Coding
 
-**As of my last testing** (March 2026), these are the LLMs I have tested the most and therefore have the most experience with:
+**As of my last testing** (March 2026), the best models for coding are:
 
 * **Claude Opus 4.6**
+* **GPT 5.4**
 * **Codex 5.3**
+
+These are not ranked in order of preference. In my experience, each one performs differently depending on what you're building and what kind of request you're making. The best approach is to be familiar with all three and choose based on the task at hand.
 
 ### Claude Opus 4.6
 
 Released on **February 17, 2026**, the launch generated some controversy, many developers were expecting the release of Sonnet 5 instead. Shortly after launch, several developers commented that the new version felt less capable than its predecessor (Opus 4.5). Over time, that perception seems to have shifted, and currently Opus 4.6 is regarded as the **best model for coding tasks** in my experience.
 
-The closest competitor today is **Codex 5.3**, a new model from OpenAI, which is the only model that comes close to matching Opus 4.6 in overall coding quality.
+### GPT 5.4
 
-**In my opinion**, for serious development work, Opus 4.6 is still the clear choice.
+Released on **March 5, 2026**, GPT 5.4 is a general-purpose model from OpenAI with coding performance that is comparable to — and in some cases superior to — Codex 5.3, which was previously OpenAI's strongest option for developers.
+
+Unlike Codex 5.3, GPT 5.4 is not limited to coding. I've tested it extensively for tasks like document explanation and found the results solid. However, it is a **paid model**, which is an important constraint. As long as it remains behind a paywall, the best free option for general-purpose tasks continues to be **Claude Sonnet 4.6**. If GPT 5.4 ever becomes available for free, it would likely become the stronger choice for general use.
+
+### Codex 5.3
+
+Still one of the best options for coding, and remains relevant even after the release of GPT 5.4. Depending on the task, it can still outperform the alternatives.
 
 ---
 
@@ -149,7 +158,7 @@ While I only recommend **Claude Opus 4.6** for actual coding, other models can s
 
 Released on **February 17, 2026**, Sonnet 4.6 has consistently surprised me in a positive way — I enjoy using it far more than I initially expected.
 
-There is a common pattern I've noticed: some people believe there's always a best model for every situation and will switch models constantly depending on the task, while others prefer to ask everything to the same model out of convenience — in most cases, that tends to be GPT. **In my opinion, Claude Sonnet 4.6 is a much better choice for this "one model for everything" use case.** I've been using it directly on [claude.ai](https://claude.ai/new) and it handles a wide variety of everyday tasks very well.
+There is a common pattern I've noticed: some people believe there's always a best model for every situation and will switch models constantly depending on the task, while others prefer to ask everything to the same model out of convenience — in most cases, that tends to be GPT. **In my opinion, Claude Sonnet 4.6 is a much better choice for this "one model for everything" use case, as long as we're comparing free options.** The free version of GPT available on OpenAI's site is still **GPT 5.3**, and against that, Sonnet 4.6 is clearly the better pick. If GPT 5.4 ever becomes free, that comparison would change — but for now, Sonnet 4.6 wins on the free tier. I've been using it directly on [claude.ai](https://claude.ai/new) and it handles a wide variety of everyday tasks very well.
 
 Some things that stood out to me during testing:
 
