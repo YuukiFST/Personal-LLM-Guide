@@ -6,7 +6,7 @@
 
 ## Rule 1 – Getting better frontend results
 
-The best models I've tested for UI are Gemini 3 Pro and Gemini 3 Flash. About 90% of what they produce looks the same: clean, safe, forgettable. The "vibe coding" aesthetic. It's not a Gemini problem. Every model does this.
+Gemini 3 Pro and Gemini 3 Flash are decent for UI work, but about 90% of what they produce looks the same: clean, safe, forgettable. The "vibe coding" aesthetic. It's not a Gemini problem. Every model does this.
 
 During training, models learn a statistical average of all the UI they've seen. They can produce something different, but you have to ask for it explicitly. If you don't, you get the default.
 
@@ -111,7 +111,7 @@ I'm on an RTX 3060 and Windows. The Windows requirement comes from university so
 
 I've been testing Hunter Alpha on openrouter.ai. Most signals suggest it's Deepseek 4, though I can't confirm this. If I'm wrong, I'll update this.
 
-How a model performs depends heavily on where it's deployed. Claude Opus 4.6 feels weaker inside Antigravity than it does in Cursor. Same model, different configuration. Hunter Alpha may not be at its best through OpenRouter.
+How a model performs depends heavily on where it's deployed. Claude Opus 4.6 feels weaker inside Antigravity than it does in Claude Code. Same model, different configuration. Hunter Alpha may not be at its best through OpenRouter.
 
 With all that said, it's the best open-source model I've tested. It beats GLM 5 and Kimi K2.5. If it is Deepseek 4 and this is its performance in a non-ideal environment, a proper release in a well-configured platform would make it hard to justify other open-source options.
 
