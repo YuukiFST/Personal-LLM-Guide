@@ -149,11 +149,49 @@ The same 80%-rules prompting technique applies here.
 
 Released February 11, 2026. Chinese open-source model, and a real step forward for open-source AI. Still behind Opus 4.6 and Codex 5.3 for coding, but useful for longer conversations: discussing a project, thinking through architecture, exploring ideas. For that use case, it's a better free option than GPT 5.2.
 
+I tested it alongside Kimi K2.5 thinking, Kimi's Agent mode, and Minimax 2.7, all trying to reproduce a dashboard. All four were bad. Not close-but-flawed bad. Just bad.
+
 ---
 
 ### Kimi K2.5
 
 Released January 26, 2026. Was the best open-source model for coding at the time. As of February 2026, there's not much reason to use it. Claude Sonnet 4.6 does the job better, and it's free within daily limits. If you hit the limit, you can rotate accounts.
+
+The thinking mode and Agent mode didn't change my view. I tested both on a dashboard reproduction task alongside GLM 5 and Minimax 2.7. None of them delivered anything useful.
+
+---
+
+### Minimax 2.7
+
+Launched a few weeks ago. The company closed it shortly after, so it's no longer open. No longer free either, and with a daily message limit like everything else. There's no reason to use it over Sonnet 4.6, which handles the same tasks better and at least has a predictable free tier.
+
+Z AI did the same with the latest GLM models. Qwen dropped the open model path too. The pattern is consistent enough to be worth noting.
+
+---
+
+### Cursor Composer 2
+
+Launched last Friday. Some benchmarks put it above Opus 4.6. It isn't. The hallucination rate makes it unreliable for anything serious. Fast and cheap, but not intelligent enough for the speed to matter.
+
+The background: Composer 2 is Kimi K2.5 with fine-tuning. Cursor didn't say that at launch. Moonshot AI posted on X thanking Cursor for using their model. They already knew. That made things uncomfortable for Cursor.
+
+My read on it: if Chinese labs keep releasing open models, nothing stops an American company from taking one, fine-tuning it, rebranding it, and charging for access. That's what happened here. The labs that keep releasing open weights may end up funding their competitors' products. At some point they'll stop, which puts them further behind the labs building closed models from scratch.
+
+---
+
+## Rule 5.2 – Using Antigravity without burning through tokens
+
+Antigravity's limit resets weekly, but the tokens go fast. How you distribute requests across models matters more than the total you have.
+
+I use three models there: Opus 4.6, Gemini 3.1 Pro, and Gemini 3 Flash. Each has a different role.
+
+**Opus 4.6** is the best model in the platform by a clear margin. It's also the most expensive. Don't use it for everything. Save it for tasks where reasoning actually matters: debugging, architecture decisions, anything where a wrong answer costs you time to fix.
+
+**Gemini 3 Flash** is fast and cheap, and that's it. It's not smart enough for planning or debugging. I use it for simple questions and mechanical tasks: running git commands, building the project, adding an icon to an executable. Tasks where the answer is obvious and you just need it formatted correctly.
+
+**Gemini 3.1 Pro** fills the gap when Opus tokens run out across all accounts. It's more capable than Flash, but the hallucination rate is real. With Opus, I can write a rough prompt and it follows. With Gemini, a rough prompt produces garbage. Spend the extra time on the prompt.
+
+There's no shortcut to learning which model to use for what. You figure it out by using the tool and watching what breaks. Start by understanding the strengths of each model, then build from there.
 
 ---
 
