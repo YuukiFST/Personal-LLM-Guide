@@ -47,11 +47,11 @@ Use Claude to help you build the prompt itself. Describe what you're building an
 
 ---
 
-## Rule 3 – Prompt generation
+## Rule 3 – Prompt engineering
 
-Most models are bad at generating good prompts. Claude is an exception, probably because Anthropic published detailed documentation on prompt engineering and Claude has internalized that material.
+Most people have no idea how to write a good prompt. They follow tips from YouTube channels run by people who read the same three blog posts and repackaged them. That's not where the real material is.
 
-Claude still isn't perfect at this. You'll need to review and refine what it produces. Treat it as a starting point.
+Anthropic and Z AI both published proper prompt engineering guidelines. The actual reasoning behind what works and why. You can find both papers in this repository. Start there instead.
 
 ---
 
