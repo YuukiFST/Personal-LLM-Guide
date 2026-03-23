@@ -107,15 +107,6 @@ I'm on an RTX 3060 and Windows. The Windows requirement comes from university so
 
 ---
 
-### Hunter Alpha (OpenRouter)
-
-I've been testing Hunter Alpha on openrouter.ai. Most signals suggest it's Deepseek 4, though I can't confirm this. If I'm wrong, I'll update this.
-
-How a model performs depends heavily on where it's deployed. Claude Opus 4.6 feels weaker inside Antigravity than it does in Claude Code. Same model, different configuration. Hunter Alpha may not be at its best through OpenRouter.
-
-With all that said, it's the best open-source model I've tested. It beats GLM 5 and Kimi K2.5. If it is Deepseek 4 and this is its performance in a non-ideal environment, a proper release in a well-configured platform would make it hard to justify other open-source options.
-
----
 
 ### Gemini 3.1 Pro
 
